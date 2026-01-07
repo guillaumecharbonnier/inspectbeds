@@ -1,0 +1,23 @@
+Package: inspectbeds
+Title: R Shiny App to Visualize BED File Statistics and Overlaps
+Version: 1.0.0
+Authors@R: person("Guillaume", "Charbonnier", email = "example@example.com", role = c("aut", "cre"))
+Description: An R Shiny application for visualizing statistics and overlaps between multiple BED files.
+    Provides interactive visualizations including UpSet plots, heatmaps, and summary statistics.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.6.0)
+Imports:
+    shiny (>= 1.7.0),
+    shinydashboard (>= 0.7.2),
+    DT (>= 0.20),
+    ggplot2 (>= 3.3.0),
+    dplyr (>= 1.0.0),
+    GenomicRanges (>= 1.44.0),
+    IRanges (>= 2.26.0),
+    UpSetR (>= 1.4.0),
+    plotly (>= 4.10.0)
+Suggests:
+    BiocManager (>= 1.30.0)

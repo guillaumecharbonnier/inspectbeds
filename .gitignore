@@ -1,0 +1,25 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+.Rdata
+.httr-oauth
+.DS_Store
+.Rprofile
+
+# Temporary files
+*~
+*.swp
+*.swo
+.Rproj.user/
+
+# Shiny specific
+rsconnect/
+*.log
+
+# Build artifacts
+packrat/lib*/
+
+# R library
+R/
