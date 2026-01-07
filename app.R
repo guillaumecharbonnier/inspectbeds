@@ -106,8 +106,7 @@ create_upset_data <- function(bed_list) {
   names(gr_list) <- names(bed_list)
   
   # Create a union of all regions
-  all_regions <- do.call(c, gr_list)
-  all_regions <- reduce(all_regions)
+  all_regions <- reduce(do.call(c, unname(gr_list)))
   
   # Check which files each region overlaps with
   upset_matrix <- data.frame(matrix(0, nrow = length(all_regions), ncol = length(gr_list)))
