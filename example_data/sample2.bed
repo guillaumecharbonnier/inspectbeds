@@ -1,0 +1,8 @@
+chr1	1500	2500	region1	120	+
+chr1	5500	6500	region2	180	-
+chr1	9500	10500	region3	140	+
+chr2	2500	3500	region4	200	+
+chr2	7500	8500	region5	190	+
+chr3	3500	4500	region6	170	-
+chr3	6000	7000	region7	220	+
+chr5	2000	3000	region8	150	+
