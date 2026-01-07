@@ -59,16 +59,31 @@ BiocManager::install(c("GenomicRanges", "IRanges"))
 
 ### Running the App
 
-#### Option 1: From Command Line
+#### Option 1: Using Docker (Recommended)
+
+The easiest way to run InspectBeds is using Docker:
+
+```bash
+# Build and run with docker-compose
+docker-compose up -d
+
+# Or build and run manually
+docker build -t inspectbeds .
+docker run -p 3838:3838 inspectbeds
+```
+
+Access the app at http://localhost:3838/inspectbeds/
+
+#### Option 2: From Command Line
 ```bash
 Rscript -e "shiny::runApp('app.R')"
 ```
 
-#### Option 2: From RStudio
+#### Option 3: From RStudio
 1. Open `app.R` in RStudio
 2. Click the "Run App" button in the top right of the editor
 
-#### Option 3: From R Console
+#### Option 4: From R Console
 ```R
 shiny::runApp('app.R')
 ```
@@ -159,6 +174,14 @@ These files contain overlapping regions across different chromosomes for demonst
 
 **Issue**: "Cannot parse BED file" error
 - **Solution**: Ensure your BED file is tab-delimited with at least 3 columns (chr, start, end)
+
+## Documentation
+
+- **[README.md](README.md)** - Main documentation (you are here)
+- **[QUICKSTART.md](QUICKSTART.md)** - Quick start guide for new users
+- **[UI_GUIDE.md](UI_GUIDE.md)** - Detailed user interface guide
+- **[TESTING.md](TESTING.md)** - Testing procedures and validation
+- **[DESCRIPTION](DESCRIPTION)** - R package metadata
 
 ## Contributing
 

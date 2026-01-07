@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  inspectbeds:
+    build: .
+    container_name: inspectbeds-app
+    ports:
+      - "3838:3838"
+    volumes:
+      - ./app.R:/srv/shiny-server/inspectbeds/app.R
+      - ./example_data:/srv/shiny-server/inspectbeds/example_data
+    restart: unless-stopped
+    environment:
+      - APPLICATION_LOGS_TO_STDOUT=true

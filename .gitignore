@@ -6,6 +6,7 @@
 .Rdata
 .httr-oauth
 .DS_Store
+.Rprofile
 
 # Temporary files
 *~
@@ -19,3 +20,6 @@ rsconnect/
 
 # Build artifacts
 packrat/lib*/
+
+# R library
+R/
